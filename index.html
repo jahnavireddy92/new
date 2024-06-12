@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <!-- Add any introductory content or image here -->
+    </div>
+  </section>
+
+
+
+  
+
+  <section id='about' class="about-section">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; color: #333; text-align: center; margin-bottom: 20px;">Beemcherla Jahnavi</h2>
+   <!--   <div style="text-align: center; margin-bottom: 20px;">
+        <img src="images/about/1.jpg" alt="About Me" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      </div> -->
+
+      <p style="font-size: 1.2rem; line-height: 1.6; color: #555; margin-bottom: 20px;">
+        Hello Everyone, Welcome to my Portfolio website. My name is Jahnavi, a data enthusiast on a mission to reveal the secret of hidden stories behind numbers. With a background in Computer Science and Engineering (holding a 8.6 CGPA).
+      </p>
+
+      <p style="font-size: 1.2rem; line-height: 1.6; color: #555; margin-bottom: 20px;">
+        I developed my knack for data analysis and thus decided to deep dive into upscaling more in the data industry. I am specialized in tools like Power BI, Excel, MySQL, and Python which enable me to transform raw data into actionable insights.
+      </p>
+
+      <p style="font-size: 1.2rem; line-height: 1.6; color: #555; margin-bottom: 20px;">
+        Explore my portfolio to witness firsthand the projects that I have undertaken and the value that I can add to your team. Let's collaborate together to uncover the insights that can drive your organization's success.
+      </p>
+
+  <!--    <p style="font-size: 1.2rem; line-height: 1.6; color: #555; margin-bottom: 20px;">
+        Motivated Data Analyst aiming to leverage my skills in SQL, Microsoft Power BI, Microsoft Excel, Python.
+      </p> -->
+  
+       
+        </div>
+      
+  <a href="https://drive.google.com/file/d/1eu-C6S_u23a0_pkU9ZcXZ0LP-xLwETfE/view?usp=drive_link" class="btn btn-secondary">Download Resume</a>
+      </div>
+
+
+         <!--<button class="portfolio">Portfolio</button>-->
+        </div>
+      </div>
+     <!-- <div class="image">
+        <img src="assets/profile.jpg" alt="profile" />
+      </div>-->
+    </div>
+  </section>
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+  <center> <p style="font-size: 1.2rem; line-height: 1.6; color: #555; margin-bottom: 20px;"> These are the projects which helped me to explore the Data Analyst field.</p>
+     <p style="font-size: 1.2rem; line-height: 1.6; color: #555; margin-bottom: 20px;">Please feel free to explore them all.</p></center>  
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+       <!--   <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1"> -->
+          <div class="card-body">
+            <h5 class="card-title">Deep Dive into 120 Years of Olympic History</h5>
+            <p class="card-text">Made use of SQL window functions, cte, subqueries, joins, filters etc to extract and summarize information
+            from two complex data tables.</p>
+           <a href="#" class="btn btn-primary">Source Code</a> 
+             <!-- <a href="#" class="btn btn-secondary">Source Code</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+       <!--   <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2"> -->
+          <div class="card-body">
+            <h5 class="card-title">HR Analytics Dashboard</h5>
+            <p class="card-text">Developed HR Analytics dashboard using Power BI to provide insights to the HR team.
+Built interactive dashboards with charts, graphs, and cards (Attrition Rate by 16.12%, Active Employees) to
+            present HR data.</p>
+            <a href="#" class="btn btn-primary">Source Code </a>
+             <!-- <a href="#" class="btn btn-secondary">Source Code</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+      <!--    <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3"> -->
+          <div class="card-body">
+            <h5 class="card-title">Hotel Booking Data Analysis</h5>
+            <p class="card-text">Utilized Python and data analysis libraries (Pandas, Matplotlib, Seaborn) to evaluate hotel booking data,
+              conducting exploratory data analysis (EDA) and data cleaning for improved insights.</p>
+          <a href="#" class="btn btn-primary">Source Code </a>  
+             <!-- <a href="#" class="btn btn-secondary">Source Code</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="1.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">
+              Proficient in using Python for data analysis, leveraging libraries such as Pandas for data manipulation, NumPy for numerical computations, and Matplotlib/Seaborn for data visualization.
+              </p>
+            <!--<a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="2.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Power Bi</h5>
+<p class="card-text">Expert in creating interactive and insightful dashboards with Power BI. Proficient in data modeling, DAX calculations, and transforming raw data into actionable insights while publishing dashboards.
+           <!-- sharing reports across the organization to support business decision-making</p>
+          <!--  <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="3.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">Skilled in crafting complex SQL queries for data retrieval, analysis, and reporting. Experienced with MS SQL Server. Able to join multiple tables, use subqueries, and perform aggregate functions 
+              <!--to derive insights from large datasets.</p>
+            <!--<a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="excel.jpeg" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Excel</h5>
+            <p class="card-text">Advanced user of Excel, capable of utilizing pivot tables, advanced functions (VLOOKUP, INDEX-MATCH), and data analysis for statistical analysis. Developed dynamic dashboards.
+              </p>
+            <!--<a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <a href="mailto:bjahnavi24@gmail.com" target="_blank">
+        <img src="Mail.png" alt="Gmail" height=40px width=40px  class="fas fa-envelope">
+           <p style="display: inline-block; padding: 10px;">bjahnavi24@gmail.com</p></a>
+      </div>
+      <div class="col-lg-6"> 
+  <img src='Call.png' alt="Call" height=40px width=40px  class="fas fa-phone"> <p style="display: inline-block; padding: 10px;">8897937492</p></img>
+      </div>
+ <div class="col-lg-6">
+        <a href="https://linkedin.com/in/jahnavibeemcherla" 
+          target="_blank">
+          <img src="linkedin.png" alt="LinkedIn"  height=40px width=40px class="social-icon" >
+  <p style="display: inline-block; padding: 10px;">
+          LinkedIn</p></a>
+      </div>
+      <div class="col-lg-6">
+        <a href="https://github.com/jahnavireddy92" target="_blank">
+          <img src="github.png" alt="GitHub"  class="social-icon"> <p style="display: inline-block; padding: 10px;">
+          GitHub</p>
+        </a>
+      </div>
+        </div>
+        </div>
+<p> <b>NOTE:</b> Ready to join | No Notice Period | Available to relocate anywhere in India.</p>
+      </section>
+      <!--
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://twitter.com/yourusername" target="_blank">
+          <img src="icons/twitter.png" alt="Twitter" class="social-icon">
+          Twitter
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://medium.com/@yourusername" target="_blank">
+          <img src="icons/medium.png" alt="Medium" class="social-icon">
+          Medium
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://youtube.com/c/yourchannel" target="_blank">
+          <img src="icons/youtube.png" alt="YouTube" class="social-icon">
+          YouTube
+        </a>
+      </div> -->
+  
+
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+ 
+
+
+ 
+
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+</body>
+</html>
